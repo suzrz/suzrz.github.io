@@ -22,9 +22,9 @@
 # just copy+paste it and modify some of the content to begin with.
 
 title: rusted 
-email: nemcova.silva@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  A paragraph describing your webpage.
+#email: nemcova.silva@gmail.com
+#description: >- # this means to ignore newlines until "baseurl:"
+#  A paragraph describing your webpage.
 baseurl: "/" # the subpath of your site
 url: "suzrz.github.io" # the base hostname & protocol for your site
 #twitter_username: tareqdandachi
@@ -32,12 +32,12 @@ github_username:  suzrz
 
 # Required plugins for the theme to work properly
 plugins:
-  - jekyll-remote-theme
   - jemoji
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
-# Including jekyll-shell-theme using the jekyll-remote-theme plugin
-remote_theme: tareqdandachi/jekyll-shell-theme
+theme: minima
 
 sass:
   style: compressed
@@ -47,10 +47,24 @@ highlighter: rouge #selecting the highlighter, default is rouge
 header_pages:
   - index.md
   - about.md
-  #- a-third-page.md
+  #- categories.md
 
 # controls how big the shell and font looks
 font-size: small # options: [small] or [large]
+
+
+# posts categorization
+#collections:
+#  category:
+#    output: true
+#
+#defaults:
+#  -
+#    scope:
+#      path: ""
+#      type: category
+#    values:
+#      layout: "category"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

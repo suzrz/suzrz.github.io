@@ -5,4 +5,3 @@ permalink_name: /home
 title: home
 ---
 
-# Helloooo
