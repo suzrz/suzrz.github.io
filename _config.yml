@@ -21,8 +21,8 @@
 # when using jekyll-shell-theme. You should use this as a guide or
 # just copy+paste it and modify some of the content to begin with.
 
-title: Page Title
-email: email@domain.xyz
+title: rusted 
+email: nemcova.silva@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A paragraph describing your webpage.
 baseurl: "/" # the subpath of your site
@@ -46,7 +46,7 @@ highlighter: rouge #selecting the highlighter, default is rouge
 
 header_pages:
   - index.md
-  #- about.md
+  - about.md
   #- a-third-page.md
 
 # controls how big the shell and font looks
