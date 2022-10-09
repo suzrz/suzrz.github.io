@@ -17,23 +17,40 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+# This is an example of what an '_config.yml' file should look like
+# when using jekyll-shell-theme. You should use this as a guide or
+# just copy+paste it and modify some of the content to begin with.
 
-title: Your awesome title
-email: your-email@example.com
+title: Page Title
+email: email@domain.xyz
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  A paragraph describing your webpage.
+baseurl: "/blog" # the subpath of your site
+url: "domain.xyz" # the base hostname & protocol for your site
+#twitter_username: tareqdandachi
+github_username:  suzrz
 
-# Build settings
-#theme: minima
-remote_theme: tareqdandachi/jekyll-shell-theme
+# Required plugins for the theme to work properly
 plugins:
+  - jekyll-remote-theme
+  - jemoji
   - jekyll-feed
+
+# Including jekyll-shell-theme using the jekyll-remote-theme plugin
+remote_theme: tareqdandachi/jekyll-shell-theme
+
+sass:
+  style: compressed
+
+highlighter: rouge #selecting the highlighter, default is rouge
+
+header_pages:
+  - index.md
+  - about.md
+  - a-third-page.md
+
+# controls how big the shell and font looks
+font-size: small # options: [small] or [large]
 
 # Exclude from processing.
 # The following items will not be processed, by default.
